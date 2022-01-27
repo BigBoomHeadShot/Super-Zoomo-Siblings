@@ -296,3 +296,4 @@ Received Import Request.
 Start importing Assets/Scripts/Dash.cs using Guid(651177aac7baf614e91cf056b802ce3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0947890d51ae69a08ff9b032dd2d049') in 0.016809 seconds 
   Import took 0.021515 seconds .
 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
