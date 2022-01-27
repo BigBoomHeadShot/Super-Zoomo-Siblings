@@ -161,6 +161,7 @@ Received Import Request.
 Start importing Assets/New Folder using Guid(38650a4ba08000b409662b5cf39a4e69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0dc0684075f6666c93d8c03c9f25681c') in 0.017819 seconds 
   Import took 0.028695 seconds .
 
+<<<<<<< Updated upstream
 ========================================================================
 Received Import Request.
   Time since last request: 815.128116 seconds.
@@ -235,3 +236,5 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
+=======
+>>>>>>> Stashed changes
