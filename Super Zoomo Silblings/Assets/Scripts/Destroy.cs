@@ -9,7 +9,10 @@ public class Destroy : MonoBehaviour
     [SerializeField] private int player1Life = 3;
     [SerializeField] private int player2Life = 3;
     [SerializeField] private GameObject spawnPoint;
-
+    [SerializeField] private List<GameObject> p1LifeVisual;
+    [SerializeField] private List<GameObject> p2LifeVisual;
+    int i;
+    int j;
     private void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.gameObject == player1)
@@ -17,6 +20,8 @@ public class Destroy : MonoBehaviour
             player1.SetActive(false);
             player1Life -= 1;
             player1.transform.position = new Vector2(spawnPoint.transform.position.x, spawnPoint.transform.position.y);
+            p1LifeVisual[i].SetActive(false);
+            i++;
             if(player1Life > 0)
             {
                 player1.SetActive(true);
@@ -27,6 +32,8 @@ public class Destroy : MonoBehaviour
             player2.SetActive(false);
             player2Life -= 1;
             player2.transform.position = new Vector2(spawnPoint.transform.position.x, spawnPoint.transform.position.y);
+            p2LifeVisual[j].SetActive(false);
+            j++;
             if (player2Life > 0)
             {
                 player2.SetActive(true);
