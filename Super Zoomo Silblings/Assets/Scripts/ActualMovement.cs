@@ -20,6 +20,6 @@ public class ActualMovement : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        rb.AddForce(new Vector2(Input.GetAxisRaw("Horizontal") * speed, Input.GetAxisRaw("Vertical")), ForceMode2D.Force);
+        rb.AddForce(new Vector2(Input.GetAxisRaw("Horizontal") * speed, Input.GetAxisRaw("Vertical") * speed), ForceMode2D.Force);
     }
 }
