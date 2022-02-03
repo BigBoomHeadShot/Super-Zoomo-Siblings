@@ -30,7 +30,7 @@ public class DashScript : MonoBehaviour
         if (Input.GetKeyUp(KeyCode.Comma) && currentCharge > 0)
         {
             velocity = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
-            GetComponent<Rigidbody2D>().AddForce(velocity * currentCharge * dashPower);
+            GetComponent<Rigidbody2D>().AddForce(velocity * currentCharge * dashPower, ForceMode2D.Impulse);
             Debug.Log(currentCharge);
             currentCharge = 0f;
         }

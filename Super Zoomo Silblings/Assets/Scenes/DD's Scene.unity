@@ -337,6 +337,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e93218b31894e0f4e837cf8341ed11c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chargeRate: 5
-  maxCharge: 500
-  dashPower: 10
+  chargeRate: 1
+  maxCharge: 20
+  dashPower: 3
