@@ -17,14 +17,20 @@ public class Destroy : MonoBehaviour
             player1.SetActive(false);
             player1Life -= 1;
             player1.transform.position = new Vector2(spawnPoint.transform.position.x, spawnPoint.transform.position.y);
-            player1.SetActive(true);
+            if(player1Life > 0)
+            {
+                player1.SetActive(true);
+            }
         }
         if (collision.gameObject == player2)
         {
             player2.SetActive(false);
             player2Life -= 1;
             player2.transform.position = new Vector2(spawnPoint.transform.position.x, spawnPoint.transform.position.y);
-            player2.SetActive(true);
+            if (player2Life > 0)
+            {
+                player2.SetActive(true);
+            }
         }
     }
 }
