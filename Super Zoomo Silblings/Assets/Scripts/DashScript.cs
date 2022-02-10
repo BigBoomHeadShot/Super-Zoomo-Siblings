@@ -19,7 +19,7 @@ public class DashScript : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKey(KeyCode.Comma) && currentCharge < maxCharge)
+        if (Input.GetKey(KeyCode.T) && currentCharge < maxCharge)
         {
             isCharging = true;
         }
