@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ActualMovement : MonoBehaviour
+public class ActualMovementPlayer2 : MonoBehaviour
 {
     private Rigidbody2D rb;
     [SerializeField] private float speed;
@@ -15,6 +15,6 @@ public class ActualMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        rb.AddForce(new Vector2(Input.GetAxisRaw("Horizontal") * speed, Input.GetAxisRaw("Vertical") * speed), ForceMode2D.Force);
+        rb.AddForce(new Vector2(Input.GetAxisRaw("Debug Horizontal") * speed, Input.GetAxisRaw("Debug Vertical") * speed), ForceMode2D.Force);
     }
 }
