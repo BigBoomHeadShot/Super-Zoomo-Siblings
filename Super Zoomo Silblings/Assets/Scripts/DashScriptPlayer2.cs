@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DashScript : MonoBehaviour
+public class DashScriptPlayer2 : MonoBehaviour
 {
     [SerializeField] private float chargeRate = 0f;
     [SerializeField] private float maxCharge = 0f;
@@ -27,9 +27,9 @@ public class DashScript : MonoBehaviour
         {
             isCharging = false;
         }
-        if (Input.GetKeyUp(KeyCode.T) && currentCharge > 0)
+        if (Input.GetKeyUp(KeyCode.Comma) && currentCharge > 0)
         {
-            velocity = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
+            velocity = new Vector2(Input.GetAxisRaw("Debug Horizontal"), Input.GetAxisRaw("Debug Vertical"));
             GetComponent<Rigidbody2D>().AddForce(velocity * currentCharge * dashPower, ForceMode2D.Impulse);
             Debug.Log(currentCharge);
             currentCharge = 0f;
